@@ -1,0 +1,109 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>GYAN_MANTRA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+          <a href="#"><img src="{% static 'image/logo.png' %}" alt="Gyan Mantra Logo"></a>
+        </div>
+        <div class="toggle">
+          <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+      
+        </ul>
+      </nav>
+      
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+            Latest Information: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus euismod felis ut est fermentum, at scelerisque erat sollicitudin.
+        </marquee>
+    </div>
+    <div class="container">
+        <div class="form-container">
+
+            <h2>Quick Inquiry Form</h2>
+
+            <form action="#" method="post" class="inquiry-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile No:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="class">Class:</label>
+                    <select id="class" name="class" required>
+                        <option value="Class 1">Class 6</option>
+                        <option value="Class 2">Class 7</option>
+                        <option value="Class 3">Class 8</option>
+                        <option value="Class 4">Class 9</option>
+                        <option value="Class 5">Class 10</option>
+                        <option value="Class 5">Class 11</option>
+                        <option value="Class 5">Class 12</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+        </div>
+        
+    </div>
+
+    <div class="why-us-container">
+        <h2>Why Choose Our Academy?</h2>
+        <p>We are committed to providing top-quality education and training to help our students succeed in their careers. Our experienced instructors, state-of-the-art facilities, and comprehensive curriculum set us apart from others.</p>
+        <ul>
+            <li>Experienced Instructors</li>
+            <li>State-of-the-art Facilities</li>
+            <li>Comprehensive Curriculum</li>
+            <li>Flexible Learning Options</li>
+            <li>Career Support Services</li>
+        </ul>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(".toggle").on("click", function(){
+          if($(".menu").hasClass("active")){
+            $(".menu").removeClass("active");
+            $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+          } else{
+            $(".menu").addClass("active");
+            $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+          }
+        })
+      })
+    </script>
+</body>
+
+</html>

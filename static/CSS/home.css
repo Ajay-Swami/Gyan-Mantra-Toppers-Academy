@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+    height: 1000vh;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/844/757/non_2x/back-to-school-background-with-doodle-light-bulb-and-rocket-pencil-launching-to-space-online-learning-and-web-page-template-digital-education-concept-free-vector.jpg);
+    background-attachment: fixed;
+    margin-top: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background: #222;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ef4b3f;
+}
+
+.logo {
+    flex: 1;
+
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover {
+    color: #fff;
+
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active,
+    .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px
+    }
+}
+
+
+section {
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+/* Marquee Styles */
+.marquee-container {
+    overflow: hidden;
+    background-color: #db7f7f;
+    padding: 10px 0;
+}
+
+marquee {
+    font-size: 20px;
+    color: #0a0a0a;
+    padding: 5px 20px;
+    white-space: nowrap;
+    animation: marquee-scroll 20s linear infinite;
+}
+
+/* @keyframes marquee-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+@media (max-width: 858px) {
+    marquee {
+        font-size: 14px;
+    }
+}
+
+/* inquiry form CSS*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+}
+
+/* why us */
+.why-us-container {
+    max-width: 1800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+/* Title styles */
+.why-us-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Text styles */
+.why-us-container p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+.why-us-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.why-us-container ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.why-us-container ul li::before {
+    content: "\2022";
+    /* Bullet point */
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .why-us-container {
+        padding: 15px;
+    }
+
+    .why-us-container h2 {
+        font-size: 22px;
+    }
+
+    .why-us-container p {
+        font-size: 16px;
+    }
+
+    .why-us-container ul li {
+        font-size: 14px;
+    }
+}
